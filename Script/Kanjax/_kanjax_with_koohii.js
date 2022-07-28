@@ -212,7 +212,7 @@ var KanJax = {
             $(div).css({ display: 'none', visibility: 'visible' });
             if(KanJax.bPopup)
                 KanJax.bPopup.close();
-            KanJax.bPopup = $(div).bPopup({ speed: 120, position: [x, y] });
+            KanJax.bPopup = $(div).bPopup({ speed: 120, position: [x, y], transition: 'slideDown' });
             if(KanJax.closePopupOnClick) {
                 div.onclick = function() {
                     if(KanJax.bPopup) {
